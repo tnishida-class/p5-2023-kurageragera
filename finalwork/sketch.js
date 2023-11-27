@@ -124,6 +124,23 @@ function keyPressed(){
    }
 }
 
+function keyReleased(){
+  let d =50;
+  noStroke();
+  if(key == "i"){ 
+    fill(255, 0, 0);
+    rect(d,d,d,d*4)
+
+    fill(255, 0, 127)
+    rect(d*4,d*4,d,4*d)
+  }
+  if(key == "t"){ 
+    fill(153, 0, 153)
+    rect(d*3,d*2,d*3,d)
+    rect(d*4,d*3,d,d)
+   }
+}
+
 
 
 function ThreeDim(p, q){
