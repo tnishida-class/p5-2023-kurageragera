@@ -87,7 +87,7 @@ rect(d*6, d, d, d*3 );
 fill(emerald);
 rect(d*6, d*4, d, d );
 fill(gray);
-rect(d*6, d*4, d*2, d );
+rect(d*6, d*4, d, d );
 fill(emerald);
 rect(d*6, d*6, d, d*2 );
 fill(yellow);
@@ -95,9 +95,7 @@ rect(d*5, 0, d, d*2);
 fill(maccha);
 rect(d*7, d*3, d, d );
 fill(gray);
-rect(d*5, d*3, d, d*2 );
-fill(black);
-rect(d*5, d*5, d, d)
+rect(d*5, d*3, d, d*3 );
 fill(emerald);
 rect(d*5, d*6, d, d*2 );
 }
@@ -117,9 +115,9 @@ function keyPressed(){
   noStroke();
   if(key == "i"){ 
     I(d,d)
-    I(d*4,d*4)
   }
   if(key == "t"){ 
+    I(d*4,d*4)
     T(d*3, d*2)
    }
 }

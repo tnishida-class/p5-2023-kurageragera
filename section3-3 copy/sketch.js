@@ -1,8 +1,7 @@
 // テキスト「キーボード操作に反応する」
 let x, y;
 let increment = 1;
-const g = 1;
-const vyMax = 20;
+
 
 function setup(){
   createCanvas(400, 400);
@@ -17,13 +16,6 @@ function draw(){
   if(keyIsDown(RIGHT_ARROW)){ x += 2; }
   if((keyIsDown("A".charCodeAt(0))) && (keyIsDown(RIGHT_ARROW))) { x += 10; }
   if((keyIsDown("A".charCodeAt(0))) && (keyIsDown(LEFT_ARROW))) { x -= 10; }
-  if((keyIsDown("V".charCodeAt(0))) && (keyIsDown(RIGHT_ARROW))){
-    x -= 2;
-    y += vyMax;
-    vy += g;
-    vy = constrain(vy, -vyMax, vyMax);
-    y = constrain(y, 0, height);
-  }
   if(x < 0){x = 0; }
   if(x > width){x = width; }
 }
